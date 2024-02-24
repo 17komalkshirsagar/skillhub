@@ -1,44 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        *{
+        * {
             margin: 0;
             padding: 0;
 
         }
-        .hero{
-            height:100vh ;
+
+        .hero {
+            height: 100vh;
             width: 100%;
-            
+
             background-image: url(sky.jpg);
-            
+
         }
-        .hero h4{
+
+        .hero h4 {
             font-size: 5em;
-           margin: 0;
+            margin: 0;
             padding: 80px;
             text-align: center;
             font-family: 'arial';
             text-align: center;
             text-decoration: underline;
-           
+
             font-size: 50px;
             font-style: oblique;
-            font-weight: 700 ;
-            
+            font-weight: 700;
 
-            
-            
-            
-          
+
+
+
+
+
         }
-       
-        
-        .bk{
+
+
+        .bk {
             height: 200px;
             width: 500%;
             display: block;
@@ -48,15 +51,17 @@
             left: 0;
             right: 0;
             z-index: 1;
-            background-repeat: repeat-x ;
+            background-repeat: repeat-x;
             animation: bk 5s linear infinite;
         }
-        @keyframes bk{
-            100%{
+
+        @keyframes bk {
+            100% {
                 transform: translate(-3400px);
             }
         }
-        .sk{
+
+        .sk {
             height: 250px;
             width: 500%;
             background-image: url(city.png);
@@ -70,12 +75,14 @@
 
 
         }
-        @keyframes sk{
-            100%{
+
+        @keyframes sk {
+            100% {
                 transform: translate(-1400px);
             }
         }
-        .komal{
+
+        .komal {
             width: 400px;
             left: 50%;
             bottom: 100px;
@@ -83,67 +90,77 @@
             position: absolute;
             z-index: 2;
         }
-        .komal img{
+
+        .komal img {
             width: 100%;
             animation: komal 1s linear infinite;
         }
-        @keyframes komal{
-            100%{
-            transform: translate(-1px);
+
+        @keyframes komal {
+            100% {
+                transform: translate(-1px);
             }
-            50%{
-            transform: translate(1px);
+
+            50% {
+                transform: translate(1px);
             }
-            0%{
-            transform: translate(-1px);
+
+            0% {
+                transform: translate(-1px);
             }
         }
-        .wheel{
+
+        .wheel {
             left: 50%;
             bottom: 178px;
             transform: translate(-50%);
             position: absolute;
-            z-index:2;
+            z-index: 2;
         }
-        .wheel img{
+
+        .wheel img {
             width: 72px;
             height: 72px;
             animation: wheel 1s linear infinite;
- 
+
         }
-        .back-wheel{
+
+        .back-wheel {
             left: -165px;
             position: absolute;
         }
-        .front-wheel{
+
+        .front-wheel {
             left: 80px;
             position: absolute;
         }
-        @keyframes wheel{
-            100%{
+
+        @keyframes wheel {
+            100% {
                 transform: rotate(360deg);
             }
         }
-        
     </style>
 </head>
+
 <body>
     <div class="hero">
-        <h4>Way to kannad</h4>
+        <h4>Way to Skillhub</h4>
         <div class="bk"> </div>
         <div class="sk"></div>
         <div class="komal">
 
-          <img src="./car.png" alt="">
+            <img src="./car.png" alt="">
         </div>
         <div class="wheel">
             <img src="./wheel.png" alt="" class="back-wheel">
             <img src="./wheel.png" alt="" class=" front-wheel">
 
         </div>
-       
+
 
 
     </div>
 </body>
+
 </html>
